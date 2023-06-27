@@ -9,7 +9,7 @@ def jaccard(first,second):
     d=len(first)+len(second)
     return float(c)/float(d)
 
-workbook = xlrd.open_workbook('Garanti_TestCase_v1-1_train_data_calculation_jaccard.xlsx', on_demand = True)
+workbook = xlrd.open_workbook('example_excel_file.xlsx', on_demand = True)
 worksheet = workbook.sheet_by_index(0)
 first_row = [] #: The row where we stock the name of the column
 for col in range(worksheet.ncols):
