@@ -1,6 +1,3 @@
-# -*- coding: utf-8 -*-
-
-
 def get_permutations(w):
     if len(w)<=1:
         return set(w)
