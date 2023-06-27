@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 import instaloader as il
 
 ig = il.Instaloader()
