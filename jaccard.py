@@ -27,7 +27,7 @@ for row in range(1, worksheet.nrows):
 #: search and print jaccard dist
 for a in range( len(data) - 1 ):
     for b in range( a+1,  len(data) - a ):
-        score = jaccard(data[a]['utterance_katman_text'], data[b]['utterance_katman_text'])
-        c1 = ' '.join(data[a]['utterance_katman_text'])
-        c2 = ' '.join(data[b]['utterance_katman_text'])
-        if score > 0.4: print('%d | id: %s --- %s --- %s | id: %s --- %s --- %s' % (score, data[a]['intent_id'], data[a]['utterance_text'], c1, data[b]['intent_id'], data[b]['utterance_text'], c2))
+        score = jaccard(data[a]['nlp_layer_text'], data[b]['nlp_layer_text'])
+        c1 = ' '.join(data[a]['nlp_layer_text'])
+        c2 = ' '.join(data[b]['nlp_layer_text'])
+        if score > 0.4: print('%d | id: %s --- %s --- %s | id: %s --- %s --- %s' % (score, data[a]['intent_id'], data[a]['nlp_layer'], c1, data[b]['intent_id'], data[b]['nlp_layer'], c2))
