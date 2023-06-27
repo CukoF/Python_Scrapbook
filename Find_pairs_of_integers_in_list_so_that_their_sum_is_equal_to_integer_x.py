@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 def find_pairs(l, x):
     pairs = []
     for (i, el_1) in enumerate(l):
