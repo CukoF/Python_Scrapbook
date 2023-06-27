@@ -10,7 +10,7 @@ with open('stop_words.txt', encoding = 'utf-8') as fp:
 
 remove = '|'.join(REMOVE_LIST)
 
-with open('garanti_testCase_v1-1_train_data.txt', encoding = 'utf-8') as fp:
+with open('example_data.txt', encoding = 'utf-8') as fp:
     line = fp.readline()
     while line:
         words = line.strip().split(" ")
